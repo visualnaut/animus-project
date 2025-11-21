@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mp3gallery>
+
+	<albums selectAtStartItemNo = "">
+	<album id="1">
+			
+			<author><![CDATA[Assassin's Creed Original Soundtrack]]></author>
+			
+			<image><![CDATA[content/images/albums/AC.jpg]]></image>
+
+			<name alsoInList = "true"><![CDATA[<font color="#42B5E8">Assassin's Creed Original Soundtrack</font>]]></name>
+			<tracks>
+				<item id="1">
+					<title><![CDATA[City of Jerusalem]]></title>
+					<duration>03:11</duration>
+					<artist><![CDATA[Jesper Kyd]]></artist>
+					<song streamer = "">content/songs/AC/City_of_Jerusalem_(Assassins_Creed).mp3</song>
+				</item>
+				<item id="2">
+					<title><![CDATA[Access the Animus]]></title>
+					<artist><![CDATA[Jesper Kyd]]></artist>
+					<duration>09:35</duration>
+					<song>content/songs/AC/Access the Animus.mp3</song>
+				</item>
+				<item id="3">
+					<title><![CDATA[The Bureau]]></title>
+					<artist><![CDATA[Jesper Kyd]]></artist>
+					<duration>03:13</duration>
+					<song>content/songs/AC/The Bureau.mp3</song>
+			    </item>
+			</tracks>
+		</album>
+	
+		<album id="2">
+			
+			<author><![CDATA[Assassin's Creed II Original Soundtrack]]></author>
+			
+			<image><![CDATA[content/images/albums/AC2.jpg]]></image>
+
+			<name alsoInList = "true"><![CDATA[<font color="#42B5E8">Assassin's Creed II Original Soundtrack</font>]]></name>
+			<tracks>
+				<item id="1">
+					<title><![CDATA[Earth]]></title>
+					<artist><![CDATA[Jesper Kyd]]></artist>
+					<duration>03:58</duration>
+					<song streamer = "">content/songs/AC2/01. Earth.mp3</song>
+				</item>
+				<item id="2">
+					<title><![CDATA[Ezio&#39;s Family]]></title>
+					<artist><![CDATA[Jesper Kyd]]></artist>
+                    <duration>03:57</duration>
+					<song>content/songs/AC2/03. Ezios Family.mp3</song>
+				</item>
+				<item id="3">
+					<title><![CDATA[Leonardo's Inventions, Pt. 1]]></title>
+					<artist><![CDATA[Jesper Kyd]]></artist>
+					<duration>02:11</duration>
+					<song>content/songs/AC2/15. LeonardosInventionspart1.mp3</song>
+			    </item>
+			</tracks>
+		</album>
+		
+		<album id="3">
+			
+			<author><![CDATA[Assassin's Creed : Brotherhood Original Soundtrack]]></author>
+			
+			<image><![CDATA[content/images/albums/AC-B.jpg]]></image>
+
+			<name alsoInList = "true"><![CDATA[<font color="#42B5E8">Assassin's Creed : Brotherhood Original Soundtrack</font>]]></name>
+			<tracks>
+				<item id="1">
+					<title><![CDATA[Master Assassin]]></title>
+					<duration>03:19</duration>
+					<song streamer = "">content/songs/AC-B/01 Master Assassin.mp3</song>
+				</item>
+				<item id="2">
+					<title><![CDATA[City of Rome]]></title>
+					<artist><![CDATA[Jesper Kyd]]></artist>
+                    <duration>05:31</duration>
+					<song>content/songs/AC-B/02 City of Rome.mp3</song>
+				</item>
+				<item id="3">
+					<title><![CDATA[Villa Under Attack]]></title>
+					<artist><![CDATA[Jesper Kyd]]></artist>
+					<duration>02:11</duration>
+					<song>content/songs/AC-B/08 Villa Under Attack.mp3</song>
+			    </item>
+			</tracks>
+		</album>
+		
+	</albums>	
+</mp3gallery>

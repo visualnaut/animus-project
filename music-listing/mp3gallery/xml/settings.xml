@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mp3gallery width = "" height = "">
+	
+	<!-- GENERAL SETTINGS -->
+	<settings>
+		<backgroundColor alpha = "100">0xFFFFFF</backgroundColor>
+		<marginAround>5</marginAround>
+	</settings>
+	
+	<!-- ALBUMS GALLERY SETTINGS -->
+	<albumsgallery width = "" height = "" margin = "10">
+		 
+		<autoStart floatStep = "1">false</autoStart> <!-- if it should autostart or not if there is a play button set, floatStep is how much should move with the scrub(in pixel)-->
+		<autoResize>false</autoResize>
+		<keyListener>true</keyListener> <!-- for space(play / pause toggle), f(fullscreen toggle) -->
+		 	
+		<backgroundColor alpha = "0">0x000000</backgroundColor>
+		
+		<itemsList marginX = "20" marginY = "20">
+			
+			<reflections alpha = "" height = "100" distance = "">true</reflections>
+			
+			<distanceBetweenItems>15</distanceBetweenItems>
+			
+			<itemWidth>150</itemWidth> <!-- the dimension of the whole item, including the margin -->
+			<itemHeight>210</itemHeight> <!-- if the image is smaller after the load the background will be resized -->
+			<itemMargin>5</itemMargin>
+			<itemNormalAlpha>25</itemNormalAlpha>
+			<itemOverAlpha>100</itemOverAlpha>			
+			
+			<itemsBackground>
+				<normalColor>0xC6C6C6</normalColor>
+				<overColor>0x005c8b</overColor>
+			</itemsBackground>
+			
+			<itemsText>
+				<size>16</size>
+				<normalColor>0x42B5E8</normalColor>
+				<overColor>0xFFFFFF</overColor>
+			</itemsText>
+		</itemsList>
+		
+		<tooltip width = "" height = "">
+			<strokeColor>0xDDDDDD</strokeColor>
+			<fillColor>0x000000</fillColor>
+			<textColor>0xFFFFFF</textColor>
+			<textSize>16</textSize>
+		</tooltip>
+		
+		<controller marginAround = "0">
+			
+			<position>bottom</position> <!-- left, right, top, bottom -->
+			
+			<autohideTime hideDurationTime = "0.5">3</autohideTime> <!-- if empty, negative or 0 the controller won't autohide after this time-->			
+			
+			<background>
+				<height>35</height>
+				<color>0xEEEEEE</color>
+				<alpha>100</alpha>
+			</background>
+			
+			<controls>
+				<dimension>35</dimension>
+				<distanceBetween>0</distanceBetween>
+				<strokeColor>-1</strokeColor> <!-- if negative, the controls won't have a stroke -->
+				<fillColor>0x005c8b</fillColor> <!-- color of the sign -->
+				<normalAlpha>50</normalAlpha>
+				<overAlpha>100</overAlpha>
+				<overOutTime>0.5</overOutTime>
+				
+				<disablePrevNextItemBts>true</disablePrevNextItemBts>
+				<disableFullBt>false</disableFullBt>
+				<disablePlayBt></disablePlayBt>
+			</controls>	
+			
+			<scroller width = "" height = "28"> <!-- this dimensions will be taken in consideration only if no dimensions have been passed to the init function -->
+				
+				<offset>8</offset> <!-- if is negative then the scrub will be larger with then the track with this offset, it has to be smaller then the half of the total dimension(for example width / 2 in this case) -->
+				<isVertical>false</isVertical> <!-- when you want to use the scroller for horizontal text make this to "false" -->
+				<updateScrubToContent defaultDimension = "100">false</updateScrubToContent> <!-- if the scrub should resize depending on how large the content is(this way it can be used as a slider), if is false then the slider will have the size equal to the "defaultDimension" attribute -->
+				<mouseWheel speed = "2">true</mouseWheel>
+				
+				<backStrokeColor>-1</backStrokeColor> <!-- if negative, the scroller back won't have a stroke -->
+				<backFillColor>0xEEEEEE</backFillColor>
+				
+				<trackFillColor>0xDDDDDD</trackFillColor>
+				<trackStrokeColor>0xBBBBBB</trackStrokeColor>
+				
+				<scrubFillColor>0x005c8b</scrubFillColor>
+				<scrubStrokeColor>-1</scrubStrokeColor> <!-- if negative the stroke will dissapear -->
+				<scrubIconColor>-1</scrubIconColor> <!-- if negative that means that the scrub won't have any sign -->
+				
+				<!-- over and normal alpha for the scrub and arrows bacground -->
+				<normalAlpha>50</normalAlpha>
+				<overAlpha>100</overAlpha>
+				<overOutTime>0.5</overOutTime>
+				
+				<arrows>
+					<position>none</position> <!-- left, right, sides, top, bottom, none - none means that there won't be any arrows -->
+					<distanceBetween></distanceBetween>
+					
+					<moveStep>5</moveStep> <!-- in pixels to move with on one press of an arrow -->
+					
+					<backColor>0x005c8b</backColor>
+					<signColor>0x000000</signColor>
+					<signOverColor>0xFFFFFF</signOverColor> 
+				</arrows>
+				
+			</scroller>	
+		</controller>
+		
+	</albumsgallery>
+	
+	<!-- MP3 PLAYER with playlist SETTINGS -->
+	<mp3player width = "" height = "" distBetweenX = "5"> <!-- distBetweenX is used as distance between artist image and playlist -->
+		
+		<backImagePath></backImagePath>
+		
+		<floatTextSpeed>0.2</floatTextSpeed> <!-- with how many pixels the text should float with to left or right -->
+	
+		<!-- HEADER from the album mp3 player -->
+		<header positionX = "" positionY = "" height = "42" marginX = "5" marginY = "1"> <!-- marginX and marginY is for the artist name and the rotator inside the header -->
+			
+			<backColor>0x006b8e</backColor>
+			
+			<artistNameColor>0xFFFFFF</artistNameColor>
+			
+			<backToAlbumsBt disable = "false">
+				
+				<text normalColor = "0xFFFFFF" overColor = "0xFFFFFF"></text>
+				
+				<backFillColor>0x006b8e</backFillColor>
+				<backFillOverColor>0x004257</backFillOverColor>
+				
+				<backStrokeColor>0x004257</backStrokeColor>
+				<backStrokeOverColor>0x006b8e</backStrokeOverColor>
+			</backToAlbumsBt>
+			
+			<rotator stayTime = "7"> <!-- stayTime: how much time(seconds) to stay on an item before rotating -->
+				<labels color = "0xacd2e9">
+					<albumLabel>Album:</albumLabel>
+					<nowPlayingLabel>Sedang Dimainkan:</nowPlayingLabel>
+				</labels>
+				
+				<texts color = "0xacd2e9">
+				</texts>				
+			</rotator>
+		</header>			
+		
+		<!-- INFO MODULE(artsit image on the left side) settings -->
+		<info width = "135" height = "197" border = "5"> <!-- depending on the with, height and border the image will fit inside -->
+			<backColor opacity = "100">0x006b8e</backColor> <!-- border color - if opacity is 0 the border will not appear -->	
+		
+			<!-- prev next album bts settings -->
+			<prevNextBts disable = "true">
+				<normalAlpha>60</normalAlpha>
+				<overAlpha></overAlpha>
+				<backColor>0x006b8e</backColor>
+				<arrowColor>0xFFFFFF</arrowColor>
+			</prevNextBts>
+			
+			<!-- buy bt settings -->
+			<buyAlbumBtText normalColor = "0xffffff" overColor = "0xC83F40">BUY ALBUM</buyAlbumBtText>
+			
+			<buyAlbumBtFillColor>0x006b8e</buyAlbumBtFillColor>
+			<buyAlbumBtFillOverColor>0xDDDDDD</buyAlbumBtFillOverColor>
+
+			<buyAlbumBtStrokeColor>0xFFFFFF</buyAlbumBtStrokeColor>
+			<buyAlbumBtStrokeOverColor>0xC83F40</buyAlbumBtStrokeOverColor>			
+		</info>
+		
+		<!-- ALBUM LIST settings -->
+		<list height = "195">
+			<backColor></backColor>
+		
+			<distanceX>5</distanceX> <!-- distance between list and scroller -->
+			<distanceY>1</distanceY> <!-- distance between items on Y -->
+			
+			<itemDimension>25</itemDimension>
+			<itemContentDistX>2</itemContentDistX>
+			
+			
+			<!-- item's inside elements settings -->
+			<titleColor over = "0xFFFFFF"></titleColor>
+			
+			<numberTextColor over = "0xFFFFFF"></numberTextColor>
+			<numberBackgroundColor>-1</numberBackgroundColor> <!-- if negative the background will not appear -->
+			
+			<currency>$</currency>
+			<buyBtText normalColor = "0xFFFFFF" overColor = "">BUY Track</buyBtText> <!-- the general text that will appear in all items if they don't have defined a special text -->			
+			<buyBtBackgroundColor over = "0xFF0000">0x999999</buyBtBackgroundColor> <!-- if negative the background will not appear -->
+			
+			<durationTextColor over = "0xFFFFFF"></durationTextColor>
+			<durationBackgroundColor>-1</durationBackgroundColor>
+			
+			<itemFillColor></itemFillColor>
+			<itemFillOverColor>0x006b8e</itemFillOverColor>
+			<itemStrokeColor>0xDDDDDD</itemStrokeColor> <!-- if nevative the stroke will not appear; this will be used also for the separators -->
+			
+			
+			<!-- scroll settings -->
+			<scrollDimension>4</scrollDimension>
+			<scrollOfsset>0</scrollOfsset>
+			<scrollBarColor>0xDDDDDD</scrollBarColor>
+			<scrollScrubColor>0x006b8e</scrollScrubColor>			
+		</list>
+		
+        
+			
+		
+		<!-- AUDIO PLAYER settings-->
+		<audioplayer width = "" height = "40">
+			<autoStart>false</autoStart> <!-- to autostart the player or not when an album is selected -->
+			<autoPlay>true</autoPlay> <!-- when a sound is loaded in the player to automatically start playing-->
+			
+			<startVolume>60</startVolume>
+			<bufferTime></bufferTime>
+			
+			<backgroundColor>0xEEEEEE</backgroundColor>
+			
+			<!-- controls general settings -->
+			<controlsHeight>30</controlsHeight> <!-- the width will be proportionally resized, this will be used also for the buttons on the right side of the controller -->
+			
+			<controlsNormalAlpha>50</controlsNormalAlpha>
+			<controlsOverAlpha time="">100</controlsOverAlpha> <!-- "time" attribute means in how many seconds to fade the buttons on roll over/out -->
+			
+			<controlsBackStrokeColor></controlsBackStrokeColor>
+			<controlsBackFillColor></controlsBackFillColor>
+			
+			<!-- this 2 will be used only for the buttons on the side side of the controller -->
+			<controlsSignStrokeColor></controlsSignStrokeColor>
+			<controlsSignFillColor></controlsSignFillColor>
+			
+			<!-- rewind and forward buttons -->
+			<playSkipControls useAsPrevNext = "false" rewindTime = "" forwardTime = "">true</playSkipControls>
+			
+			<timeColor>0x000000</timeColor>
+			
+			<playBarHeight>8</playBarHeight>
+			<playBarScrubColor>0x000000</playBarScrubColor>
+			<playedBarColor>0x006b8e</playedBarColor>
+			<downloadedBarColor>0xcdecff</downloadedBarColor>
+			<backBarColor>0XFFFFFF</backBarColor>
+			
+			<volumeControl vertical = "true" scrub = "true"></volumeControl>
+			<volumeBtColor>0x001937</volumeBtColor>
+			<volumeScrubColor></volumeScrubColor>
+			<volumeLevelBarColor>0x006b8e</volumeLevelBarColor>
+			<volumeBackBarColor></volumeBackBarColor>
+			<volumeBarBackColor strokeColor = "#CCCCCC">0xEEEEEE</volumeBarBackColor>
+			
+			<shareButton color = "0x001937">false</shareButton>
+			
+			<shuffleButton color = "0x001937">true</shuffleButton>
+			
+			<loopButton color = "0x001937">true</loopButton><!-- it has 3 states: no repeat, repeat song, repeat list -->
+	
+		</audioplayer>	
+	</mp3player>
+	
+</mp3gallery>

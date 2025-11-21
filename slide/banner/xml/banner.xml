@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- slideShowTime - if set to 0, there is no autoslide -->
+
+<banner width = "560" height = "350"
+		backgroundColor = "0xffffff"
+		backgroundTransparency = "100"
+		
+		startWith = "1"
+		barHeight = "20"
+		fadeTransition = "false"
+		verticalTransition = "false"
+		controllerTop = "false"
+		transitionSpeed = "2"
+		titleX = "0"
+		titleY = "0">
+
+	<items>
+		<item>
+			<title></title>
+			<path>content/images/image1.jpg</path>
+			<bar_color>0xff7a7a</bar_color>
+			<bar_transparency>0</bar_transparency>
+			<slideShowTime>6</slideShowTime>
+		</item>
+		
+		<item>
+			<title></title>
+			<path>content/images/image2.jpg</path>
+			<bar_color>0xff7a7a</bar_color>
+			<bar_transparency>30</bar_transparency>
+			<slideShowTime>3</slideShowTime>
+		</item>
+		
+		<item>
+			<title></title>
+			<path>content/images/image3.jpg</path>
+			<bar_color>0xff7a7a</bar_color>
+			<bar_transparency>30</bar_transparency>
+			<slideShowTime>3</slideShowTime>
+		</item>
+		
+		<item>
+			<title></title>
+			<path>content/images/image4.jpg</path>
+			<bar_color>0xff7a7a</bar_color>
+			<bar_transparency>30</bar_transparency>
+			<slideShowTime>3</slideShowTime>
+		</item>
+		
+		<item>
+			<title></title>
+			<path>content/images/image5.jpg</path>
+			<bar_color>0xff7a7a</bar_color>
+			<bar_transparency>30</bar_transparency>
+			<slideShowTime>3</slideShowTime>
+		</item>
+		
+		<item>
+			<title></title>
+			<path>content/images/image6.jpg</path>
+			<bar_color>0xff7a7a</bar_color>
+			<bar_transparency>30</bar_transparency>
+			<slideShowTime>3</slideShowTime>
+		</item>
+	</items>
+		
+</banner>
