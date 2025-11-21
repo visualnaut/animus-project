@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Assassin's Creed : Il galleria</title>
+<link rel="stylesheet" type="text/css" href="css-code.css" />
+<link href="images/icon.png" rel='shortcut icon'/>
+<link rel="stylesheet" type="text/css" href="lightview/css/lightview.css" />
+
+<script type='text/javascript' src='lightview/js/prototype.js'></script>
+<script type='text/javascript' src='lightview/js/scriptaculous.js'></script>
+<script type='text/javascript' src='lightview/js/lightview.js'></script> 
+</head>
+<body>
+<table class="table-main" align="center" width="800">
+<tr><td align="center" colspan="5"><img width="100%" src="images/header.png" /></td></tr>
+<tr><td width="160"><a title="Home" href="Assassin's Creed Database.html"><div class="home"></div></a></td>
+	<td width="160"><a title="Games" href="ac_game.html#game"><div class="games"></div></a></td>
+	<td width="160"><a title="Character" href="ac_char.html#char"#><div class="char"></div></a></td>
+    <td width="160"><a title="Weapons" href="ac_weapon.html#weapon"><div class="weapon"></div></a></td>
+    <td width="160"><a title="Gallery" href="ac_gallery.html"><div class="gallery"></div></a></td>
+</tr>
+<tr>
+	<td align="center" colspan="5" bgcolor="#FFFFFF"><hr><em><p class="head">Non trovo alcuna gioia in <font color="#FF0000">questo</font>, ma non c'è altro modo.</p></em><hr>
+    </td>
+</tr>
+<tr>
+	<td colspan="5 "bgcolor="#FFFFFF"><center><img src="images/ac-galeri.png" /></center></td>
+</tr>
+
+<tr><td colspan="5" bgcolor="#FFFFFF" class="title-border">
+<center><p class="head"><font color="#FF0000">Images</font> Gallery</p></center>
+</td></tr>
+
+<tr><td colspan="5" bgcolor="#FFFFFF" class="glr-border">
+              <script type="text/javascript" src="gallery/js/swfobject.js"></script>
+        <script type="text/javascript" src="gallery/js/swfmacmousewheel.js"></script>
+		<script type="text/javascript">
+
+			// JAVASCRIPT VARS
+			// cache buster
+			var cacheBuster = "?t=" + Date.parse(new Date());		
+			
+			// stage dimensions
+			// if you define '100%' then the swf will have the browser dimensions
+			var stageW = "800";//"100%"; //
+			var stageH = "600";//"100%"; //
+			
+			
+			// ATTRIBUTES
+		    var attributes = {};
+		    attributes.id = 'component';
+		    attributes.name = attributes.id;
+		    
+			// PARAMS
+			var params = {};
+			params.allowfullscreen = "true";
+			params.allowScriptAccess = "always";
+			params.bgcolor = "#666666";
+			//params.wmode = "transparent";
+			
+
+		    /* FLASH VARS */
+			var flashvars = {};				
+			
+			/// if commented / delete these lines, the component will take the stage dimensions defined 
+			/// above in "JAVASCRIPT SECTIONS" section or those defined in the settings xml			
+			flashvars.componentWidth = stageW;
+			flashvars.componentHeight = stageH;
+			
+			/// path to the content folder(where the xml files, images or video are nested)
+			/// if you want to use absolute paths(like "http://domain.com/images/....") then leave it empty("")
+			flashvars.pathToFiles = "gallery/tagsimagegallery/";
+			flashvars.xmlPath = "";
+			
+			/** EMBED THE SWF**/
+			swfobject.embedSWF("gallery/preview.swf"+cacheBuster, attributes.id, stageW, stageH, "9.0.124", "js/expressInstall.swf", flashvars, params);
+			if(swfmacmousewheel) swfmacmousewheel.registerObject(attributes.id);
+		</script>
+	
+		<table width="100%" height="100%" cellpadding="0" cellspacing="0">
+			<td align="center">
+				
+				<!-- this div will be overwritten by SWF object -->		
+				<div id="component">
+					<p>In order to view this object you need Flash Player 9+ support!</p>
+					<a href="http://www.adobe.com/go/getflashplayer">
+						<img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player"/>
+					</a>
+				</div>
+			
+			</td>
+		</table>
+        </td></tr>
+<tr><td colspan="5" bgcolor="#FFFFFF" class="title-border">
+<center><p class="head"><font color="#FF0000">Music</font> Gallery</p></center>
+</td></tr>
+<tr><td bgcolor="#FFFFFF" colspan="5" class="mp3-border"><center>
+<embed id="FlashComponent" align="middle"
+	src="music-listing/preview.swf"
+	bgColor = "#FFFFFF"
+	width="800"
+	height="300"
+	allowfullscreen="true"
+	flashVars="pathToFiles=music-listing/mp3gallery/&componentWidth=800&componentHeight=300&xmlPath=xml/settings.xml&contentXMLPath=xml/mp3gallery.xml"></embed></center>
+
+<center> <div class="footer"><p align="center"><br />Assassin's Creed Database © 2011 by Kersa Andika (khascade)</p></div>
+</td></tr>
+
+</table>
+ 
+</body>
+</html>

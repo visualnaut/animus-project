@@ -1,0 +1,37 @@
+body {	background-image:url(images/bg.jpg); 
+		background-attachment:fixed; margin:0}
+.table-main {-moz-box-shadow: 1px 3px 60px 3px #011c37; border: solid; border-color:#FFF; border-radius: 5px}
+p.head { text-shadow: 2px 3px 2px #000; text-decoration:underline; text-height:font-size; font-size:20px}
+hr { color:#BCE7FE;}
+div.content { margin:15px;}
+a {text-decoration:none; color:#0054A8}
+a:hover {text-decoration:underline}
+
+.home{ width:160px; height:36px; background:url(images/home.png); border-radius:50px; transition: border-radius 1s; -moz-transition: border-radius 1s; -o-transition: border-radius 1s; -webkit-transition: border-radius 1s; }
+.home:hover {width:160px; height:36px; border-radius:5px; background:url(images/home-hover.gif)}
+.home:active { border:none; text-decoration:none;}
+
+.games{ width:160px; height:36px; background:url(images/games.png); border-radius:50px; transition: border-radius 1s; -moz-transition: border-radius 1s; -o-transition: border-radius 1s; -webkit-transition: border-radius 1s;}
+.games:hover {width:160px; height:36px;border-radius:5px; background:url(images/games-hover.gif)}
+.games:active { border:none; text-decoration:none;}
+
+.char{ width:160px; height:36px; background:url(images/character.png); border-radius:50px; transition: border-radius 1s; -moz-transition: border-radius 1s; -o-transition: border-radius 1s; -webkit-transition: border-radius 1s;}
+.char:hover {width:160px; height:36px;border-radius:5px; background:url(images/character-hover.gif)}
+.char:active { border:none; text-decoration:none;}
+
+.weapon{ width:160px; height:36px; background:url(images/weapons.png); border-radius:50px; transition: border-radius 1s; -moz-transition: border-radius 1s; -o-transition: border-radius 1s; -webkit-transition: border-radius 1s;}
+.weapon:hover {width:160px; height:36px;border-radius:5px; background:url(images/weapons-hover.gif)}
+.weapon:active { border:none; text-decoration:none;}
+
+.gallery{ width:160px; height:36px; background:url(images/gallery.png); border-radius:50px; transition: border-radius 1s; -moz-transition: border-radius 1s; -o-transition: border-radius 1s; -webkit-transition: border-radius 1s;}
+.gallery:hover {width:160px; height:36px;border-radius:5px; background:url(images/gallery-hover.gif)}
+.gallery:active { border:none; text-decoration:none;}
+
+.w-name {text-decoration:underline; font-size:15px solid; text-shadow: 1px 2px 2px #000; text-align:center}
+.img-border { background:#4b4b4b ;border-color:#CCC ; border:10px ; border-radius: 5px}
+.glr-border { background:#666666 ;border-color:#001937 ; border:10px ; border-radius: 10px}
+
+.mp3-border { background:#FFFFFF ; border:10px ; border-radius: 9px}
+.title-border {background:#FFFFFF ; border:10px ; border-radius: 4px}
+
+.footer {width:800px; height:54px; background:url(images/footer.jpg); color:#FFF;}

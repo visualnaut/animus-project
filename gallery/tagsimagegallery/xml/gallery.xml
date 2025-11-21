@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component>
+
+	<settings width = "" height = "" margin = "10">
+		 
+		<autoStart generalTimeToStay = "3">true</autoStart> <!-- if there is a play button set if it should autostart or not -->
+		<autoResize>false</autoResize>
+		<keyListener>true</keyListener>
+		 	
+		<backgroundColor alpha = "0">0x001937</backgroundColor>
+		
+		<menuList marginX = "10" marginY = "10">
+			<distanceBetweenItems>10</distanceBetweenItems>
+			<itemsBackground>
+				<defaultWidth>30</defaultWidth> <!-- if not defined then the background will take the text width -->
+				<normalColor alpha = "35">0x001937</normalColor>
+				<overColor alpha = "80">0x42B5E8</overColor>
+			</itemsBackground>
+			<itemsText>
+				<size>16</size>
+				<normalColor>0x42B5E8</normalColor>
+				<overColor>0xFFFFFF</overColor>
+			</itemsText>
+		</menuList>
+		
+		<controller marginAround = "10">
+			
+			<position>bottom</position> <!-- left, right, top, bottom -->
+			
+			<autohideTime hideDurationTime = "0.3">4</autohideTime> <!-- if negative the controller won't autohide after this time-->			
+			
+			<background>
+				<height>35</height>
+				<color></color>
+				<alpha>80</alpha>
+			</background>
+			
+			<controls>
+				<distanceBetween>10</distanceBetween>
+				<strokeColor></strokeColor> <!-- for info button for example -->
+				<fillColor></fillColor>
+				<normalAlpha>50</normalAlpha>
+				<overAlpha>100</overAlpha>
+				<overOutTime>0.5</overOutTime>
+				
+				<disablePrevNextItemBts></disablePrevNextItemBts>
+				<disableFullBt></disableFullBt>
+				<disableInfoBt>true</disableInfoBt>
+				<disablePlayBt></disablePlayBt>
+			</controls>	
+			
+			<scroller width = "" height = "25"> <!-- this dimensions will be taken in consideration only if no dimensions have been passed to the init function -->
+				
+				<offset>8</offset> <!-- if is negative then the scrub will be larger with then the track with this offset, it has to be smaller then the half of the total dimension(for example width / 2 in this case) -->
+				<isVertical>false</isVertical> <!-- when you want to use the scroller for horizontal text make this to "false" -->
+				<updateScrubToContent defaultDimension = "100">true</updateScrubToContent> <!-- if the scrub should resize depending on how large the content is(this way it can be used as a slider), if is false then the slider will have the size equal to the "defaultDimension" attribute -->
+				<mouseWheel speed = "2">true</mouseWheel>
+				
+				<backColor>0x27AAE1</backColor>
+				<trackColor>0x42B5E8</trackColor>
+				
+				<scrubStrokeColor>-1</scrubStrokeColor> <!-- if negative the strke will dissapear -->
+				<scrubFillColor>0xFFFFFF</scrubFillColor>
+				<scrubIconColor>none</scrubIconColor> <!-- if is set to "none" that means that the arrow won't have any sign -->
+				
+				<!-- over and normal alpha for the scrub and arrows bacground -->
+				<normalAlpha>50</normalAlpha>
+				<overAlpha>100</overAlpha>
+				<overOutTime>0.5</overOutTime>
+				
+				<arrows>
+					<position>none</position> <!-- left, right, sides, top, bottom, none - none means that there won't be any arrows -->
+					<distanceBetween></distanceBetween>
+					
+					<moveStep>5</moveStep> <!-- in pixels to move with on one press of an arrow -->
+					
+					<backColor alpha="0">0x666666</backColor>
+					<signColor>0x000000</signColor>
+					<signOverColor>0xFFFFFF</signOverColor> 
+				</arrows>
+				
+			</scroller>	
+		</controller>
+		
+		<infoWindow width = "200" height = "110" margin = "10">
+			
+			<backColor alpha = ""></backColor>
+			
+			<titleColor size = "16"></titleColor>
+			
+			<textColor size = ""></textColor>
+			
+			<closeBt margin = "">
+				<normalAlpha>50</normalAlpha>
+				<overAlpha>100</overAlpha>
+				
+				<signColor></signColor>
+				
+				<backColor alpha = "">0x000000</backColor>
+			</closeBt>
+			
+			<scroller width = "8" height = ""> <!-- this dimensions will be taken in consideration only if no dimensions have been passed to the init function -->
+				
+				<offset>2</offset> <!-- if is negative then the scrub will be larger with then the track with this offset, it has to be smaller then the half of the total dimension(for example width / 2 in this case) -->
+				<isVertical>true</isVertical> <!-- when you want to use the scroller for horizontal text make this to "false" -->
+				<updateScrubToContent defaultDimension = "15">false</updateScrubToContent> <!-- if the scrub should resize depending on how large the content is(this way it can be used as a slider), if is false then the slider will have the size equal to the "defaultDimension" attribute -->
+				<mouseWheel speed = "2">true</mouseWheel>
+				
+				<backColor>0x000000</backColor>
+				<trackColor>0x333333</trackColor>
+				
+				<scrubStrokeColor>-1</scrubStrokeColor> <!-- if negative the stroke will dissapear -->
+				<scrubFillColor>0xFFFFFF</scrubFillColor>
+				<scrubIconColor>none</scrubIconColor> <!-- if is set to "none" that means that the arrow won't have any sign -->
+				
+				<!-- over and normal alpha for the scrub and arrows bacground -->
+				<normalAlpha>50</normalAlpha>
+				<overAlpha>100</overAlpha>
+				<overOutTime>0.5</overOutTime>
+				
+				<arrows>
+					<position>none</position> <!-- left, right, sides, top, bottom, none - none means that there won't be any arrows -->
+					<distanceBetween></distanceBetween>
+					
+					<moveStep>5</moveStep> <!-- in pixels to move with on one press of an arrow -->
+					
+					<backColor alpha="0">0x666666</backColor>
+					<signColor>0x000000</signColor>
+					<signOverColor>0xFFFFFF</signOverColor> 
+				</arrows>
+				
+			</scroller>
+		</infoWindow>		
+		
+	</settings>
+	
+	
+	<content startWidthItemNo = "1">		 
+		
+		<galleryItem imagePath = "images/image08.jpg">
+			<text><![CDATA[Assassin's Creed Concept Art 1]]></text>
+		</galleryItem>
+		
+		<galleryItem imagePath = "images/image09.jpg">
+			<text><![CDATA[Assassin's Creed Concept Art 2]]></text>
+		</galleryItem>
+		
+		<galleryItem imagePath = "images/image02.jpg">
+			<text><![CDATA[Assassin's Creed II Concept Art 1]]></text>
+		</galleryItem>
+		
+		<galleryItem imagePath = "images/image14.jpg">
+			<text><![CDATA[Assassin's Creed II Concept Art 2]]></text>
+		</galleryItem>
+		
+		<galleryItem imagePath = "images/image03.jpg">
+			<text><![CDATA[Assassin's Creed Brotherhood Concept Art 1]]></text>
+		</galleryItem>
+		
+		<galleryItem imagePath = "images/image06.jpg">
+			<text><![CDATA[Assassin's Creed Brotherhood Concept Art 2]]></text>
+		</galleryItem>
+		
+		<galleryItem imagePath = "images/image11.jpg">
+			<text><![CDATA[Roma Concept Art 1]]></text>
+		</galleryItem>
+		
+		<galleryItem imagePath = "images/image24.jpg">
+			<text><![CDATA[Roma Concept Art 2]]></text>
+		</galleryItem>
+		
+		<galleryItem imagePath = "images/image22.jpg">
+			<text><![CDATA[Venice Concept Art]]></text>
+		</galleryItem>
+		
+		<galleryItem imagePath = "images/image17.jpg">
+			<text><![CDATA[Market Concept Art]]></text>
+		</galleryItem>
+		
+		<galleryItem imagePath = "images/image10.png">
+			<text><![CDATA[Constantinople]]></text>
+		</galleryItem>
+		
+		<galleryItem imagePath = "images/image25.jpg">
+			<text><![CDATA[The Pantheon]]></text>
+		</galleryItem>	
+		
+		<galleryItem imagePath = "images/image20.jpg">
+			<text><![CDATA[Assassin's Hideout]]></text>
+		</galleryItem>	
+		
+		<galleryItem imagePath = "images/image05.jpg">
+			<text><![CDATA[Auditore's Villa Attack Concept Art]]></text>
+		</galleryItem>
+		
+		<galleryItem imagePath = "images/image04.jpg">
+			<text><![CDATA[Altair Escape]]></text>
+		</galleryItem>	
+		
+		<galleryItem imagePath = "images/image07.jpg">
+			<text><![CDATA[Altair Stealth Attack]]></text>
+		</galleryItem>
+		
+		<galleryItem imagePath = "images/image19.jpg">
+			<text><![CDATA[Altair in Action]]></text>
+		</galleryItem>
+	
+		<galleryItem imagePath = "images/image12.jpg">
+			<text><![CDATA[Ezio at Vatican]]></text>
+		</galleryItem>
+		
+		<galleryItem imagePath = "images/image15.jpg">
+			<text><![CDATA[Ezio at Rooftop]]></text>
+		</galleryItem>
+		
+		<galleryItem imagePath = "images/image16.jpg">
+			<text><![CDATA[Ezio with Sword]]></text>
+		</galleryItem>
+					
+		<galleryItem imagePath = "images/image21.jpg">
+			<text><![CDATA[Ezio Auditore in Action]]></text>
+		</galleryItem>
+		
+		<galleryItem imagePath = "images/image23.jpg">
+			<text><![CDATA[Ezio at Roma]]></text>
+		</galleryItem>
+		
+		<galleryItem imagePath = "images/image01.png">
+			<text><![CDATA[Ezio in Firenze]]></text>
+		</galleryItem>
+		
+						
+	</content>
+	
+</component>
